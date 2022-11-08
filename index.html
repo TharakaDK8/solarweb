@@ -508,8 +508,9 @@
             </ul>
           </div>
           <div class="col-md-6 col-sm-6">
-            <form id="main-contact-form" name="contact-form" method="post" action="#">
+            <form id="main-contact-form" name="contact-form" method="post" action="https://api.staticforms.xyz/submit">
               <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <input type="hidden" name="accessKey" value="fb1a1f65-e96c-4b7e-b74a-96e43c70dd24"> <!-- Required -->
                 <div class="col-sm-6">
                   <div class="form-group">
                     <input type="text" name="name" class="form-control" placeholder="Name" required="required">
@@ -529,7 +530,9 @@
                 <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message"
                   required="required"></textarea>
               </div>
-              <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#">Send Now</a>
+              <input class="btn-send col-md-12 col-sm-12 col-xs-12" type="submit" value="Send Now" />
+              <!-- <button class="btn-send col-md-12 col-sm-12 col-xs-12" type="submit">Submit!</button> -->
+              <!-- <a class="btn-send col-md-12 col-sm-12 col-xs-12" type="submit">Send Now</a> -->
             </form>
           </div>
         </div>
